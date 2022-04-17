@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <!-- (a.logo>img)+(nav#gnb>ul>li*5>span+(ul.sub>li*4>a{메뉴$}))+(p#tnb>a{상단$}*3) -->
+                <a href="index.html" class="logo">
+                    <img src="./img/samsung_logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>기업정보</span>
+                            <ul class="sub">
+                                <li><a href="">기업개요</a></li>
+                                <li><a href="">CEO 인사말</a></li>
+                                <li><a href="">연혁</a></li>
+                                <li><a href="">사업장 정보</a></li>
+                                <li><a href="">전자공고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>제품정보</span>
+                            <ul class="sub">
+                                <li><a href="">OLED Display</a></li>
+                                <li><a href="">QD Display</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>경영전략</span>
+                            <ul class="sub">
+                                <li><a href="">지속가능경영</a></li>
+                                <li><a href="">인권정책</a></li>
+                                <li><a href="">녹색경영</a></li>
+                                <li><a href="">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>미디어센터</span>
+                            <ul class="sub">
+                                <li><a href="">뉴스</a></li>
+                                <li><a href="">소셜미디어</a></li>
+                                <li><a href="">영상</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>커뮤니티</span>
+                            <ul class="sub">
+                                <li><a href="">채용정보</a></li>
+                                <li><a href="">직무소개</a></li>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb"><a href="">로그인</a><a href="">사이트맵</a><a href="">오시는길</a></p>
+            </div>
+        </header>
+        <div id="content">
+            <!-- div#figure#vs>(ul.img_box>li*4>a>img+(div.tit_box>h2.vs_tit{배너제목$}+p.vs_com{배너설명}))+(div.btn_group>button.prev{이전}+button.next_btn{다음}) -->
+            <div id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">
+                            <img src="./img/kv-01.jpg" alt="스마트폰" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">디지털 세상으로 <br>연결해주는 '창(窓)'</h2>
+                                <p class="vs_com">디스플레이 기술은 무한한 확장성으로 새로운 일상과 가치를 선사합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/kv-02.jpg" alt="노트북" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">삼성디스플레이, '노트북 OLED'로 달린다</h2>
+                                <p class="vs_com">2021년 노트북용 OLED 라인업 10종 이상으로 확대</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/kv-03_1.jpg" alt="폴더폰" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">생활의변화, 미래를 펼치다 Foldable Display</h2>
+                                <p class="vs_com">디스플레이 혁신 기술이 집약된 폴더블 OLED는 한층 더 확장된 화면과 모빌리티 편의성을 제공합니다.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/kv-04_1.jpg" alt="스마트폰화소자" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">OLED Microsite 오픈</h2>
+                                <p class="vs_com">삼성 OLED가 열어갈 새로운 세상을 만나보세요!</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn_group">
+                    <button class="prev">이전</button><button class="next_btn">다음</button>
+                </div>
+            </div>
+            <!-- div.grid_box>ul.grid_wrap>li.col2.item$*6>a>h3.col_tit{컬럼제목}+p.col_com{컬럼설명}+span.arrow -->
+            <div class="grid_box">
+                <ul class="grid_wrap">
+                    <li class="col2 item1">
+                        <a href="">
+                            <h3 class="col_tit">News</h3>
+                            <p class="col_com">노트북 장시간 사용에 눈 건강이 걱정이라면? ‘삼성 OLED’가 해답</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item2">
+                        <a href="">
+                            <h3 class="col_tit">SDC Culture</h3>
+                            <p class="col_com">기술과 사람을 더욱 가치있게 연결하는 최고의 디스플레이를 만듭니다.</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item3">
+                        <a href="">
+                            <h3 class="col_tit">채용정보</h3>
+                            <p class="col_com">삼성디스플레이는 도전, 창의, 열정을 가진 전문 인재를 기다립니다.</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item4">
+                        <a href="">
+                            <h3 class="col_tit w">OLED Display</h3>
+                            <p class="col_com w">Why 삼성 OLED</p>
+                        </a>
+                    </li>
+                    <li class="col2 item5">
+                        <a href="">
+                            <h3 class="col_tit w">QD Display</h3>
+                            <p class="col_com w">Take The Quantum Leap</p>
+                        </a>
+                    </li>
+                    <li class="col2 item6">
+                        <a href="">
+                            <h3 class="col_tit w">Galaxy Z Fold 3의<br> 비밀을 파헤쳐 보자</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer id="ft">
+            <!-- div.ft_wrap>(nav.fnb>a{하단$}*6)+(nav.snb>ul>li.sns$*3>a)+p.copyright -->
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">사이트맵</a>
+                    <a href="">Contact US</a>
+                    <a href="">회원약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">보안신고센터</a>
+                    <a href="">협력사</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1"><a href="" title="페이스북"></a></li>
+                        <li class="sns2"><a href="" title="유튜브"></a></li>
+                        <li class="sns3"><a href="" title="네이버 포스트"></a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © SAMSUNG DISPLAY All rights reserved. 대표번호 : 031-5181-1114</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

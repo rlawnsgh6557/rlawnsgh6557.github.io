@@ -1,0 +1,49 @@
+삼성디스플레이처럼 할거임
+
+
+기획서 = 스토리보드 = 사이트설계
+
+
+수직적 크기 : deepth(3 단계 초과 금지)
+수평적 크기 : length(6개 초과 금지)
+
+-> 간소화
+
+
+1)메뉴설계 = 사이트구조
+
+메인 index.html
+
+노트북(category1.html)		데스크탑(category2.html)		 	모니터(category3.html)		 	TV(category4.html) 		주변기기(category5.html)
+
+	13형대(category1_1.html)		사무용/교육욕(category2_1.html)		22형(category3_1.html)				
+	14형대(category1_2.html)		3D게임/그래픽용(category2_2.html)		24형(category3_2.html)
+	15형대(category1_3.html)		고성능/전문가용(category2_3.html)		26형(category3_3.html)
+	17형대(category1_4.html)		특가제품(category2_4.html)			휴대용/포터블(category3_13.html)
+										모니터악세사리(category3_14.html)
+										
+										
+										
+										
+										
+										
+										
+										휴대용/포터블(category3_13.html)
+										모니터악세사리(category3_14.html)
+
+2)흐름 설계 = 사이트사용법 = 사이트맵 => breadcrumb
+	메인 -> 노트북 -> 13형대노트북
+			14형대노트북
+	메인 -> 데스크탑 -> 사무용/교육용
+			3D게임
+
+	메인 -> 모니터 ->  22형
+			23형
+
+3) 화면설계(메인1개, 7개) = 상세 설계
+	메인
+		노트북
+		데스크탑
+	메인페이지+메인메뉴의 카테고리 개수만큼7개
+
+4) 소스 촬영/제작 및 (기존사이트에서 소스 다운로드) <- 우리가 할일
