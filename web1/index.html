@@ -63,8 +63,13 @@
     .logo { display:block; width: 250px; float:left; }
     .logo img { display:block; width: 100%; }
     #gnb { float:left; }
-    #gnb > ul > li { float:left; padding-left: 50px; padding-right: 20px;  }
+    #gnb > ul > li { float:left; padding-left: 50px; padding-right: 20px; 
+    position: relative; }
     #gnb > ul > li > span { display:block; line-height: 36px; cursor:pointer; }
+    #gnb ul li .sub { display:none; position:absolute; left: 10px; top: 36px; z-index: 999;
+    padding-left: 10px; width: 160px; height: 430px; background-color: #eee;}
+    #gnb ul li .sub li { line-height: 38px;}
+    #gnb ul li:hover .sub { display:block; }
 
     #tnb { float:right; }
 
