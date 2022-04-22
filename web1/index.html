@@ -88,8 +88,21 @@
     text-shadow: 1px 1px 1px #333; padding-left: 40px;}
     .vs_tit { font-style: 42px; line-height: 1.6;}
     .vs_com { font-style: 16px; padding-top: 20px;}
+    
+    .grid_box { clear: both; width: 100%; }
+    .grid_wrap { clear:both; width: 100%; }
+    .grid_wrap li { float:left; height: 16.66667vw; background-position: center center; }
 
-
+    .col1 { width: 8.33333%;}
+    .col2 { width: 16.66667%;}
+    .col3 { width: 25%;}
+    .col4 { width: 33.33333%;}
+    .col5 { width: 41.66667%;}
+    .col6 { width: 50%;}
+    .grid_wrap li a { diaplay:block; padding: 28px;}
+    .col_tit, .col_com { color:#000;}
+    .col_tit { padding-top: 18px;}
+    
     #ft { clear:both; width: 100%; }
 
     </style>
@@ -221,7 +234,7 @@
                             ani1();
                         }, 3000);
                         function ani1(){
-                            $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 600, function(){
+                            $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 550, function(){
                                 $(".img_box li").eq(0).appendTo($(".img_box"));
                                 $(".img_box").css("margin-left","0px");
                             });
