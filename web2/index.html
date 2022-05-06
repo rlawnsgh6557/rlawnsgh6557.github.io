@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./source file/shortcut icon/favicon.png">
+    <link rel="apple-touch-icon" href="./source file/shortcut icon/favicon.png">
+    <!-- 검색(메타) 정보 -->
+    <meta name="url" content="https://www.lge.co.kr/">
+    <meta name="title" content="LG전자">
+    <meta name="description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta name="keywords" content="LG전자,LG,전자">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.lge.co.kr">
+    <meta property="og:title" content="LG전자">
+    <meta property="og:description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta property="og:image" content="./source file/shortcut icon/favicon.png">
+    <title>LG전자</title>
+    <!-- 기본 플러그인 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹 폰트/폰트 모듈 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: 'scB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    } 
+    @font-face {
+        font-family: 'ROKAF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }   
+    </style>
+    <!-- 웹 아이콘 연결 -->
+    <!-- XEIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./col.css">
+    <style>
+    /* 비주얼 슬라이더 */
+    #vs { width: 100%; overflow: hidden; position: relative;}
+    .img_box {width: 400%;}
+    .img_box li { float: left; width: 25%; position: relative;}
+    .img_box li a { display:block; }
+    .img_box li a img { display: block; width: 100%; height: auto;}
+    .img_box .tit_box { position: absolute; top: 50px; left: 50px; color: rgb(240, 204, 226);
+    text-shadow: 1px 1px 1px #333; padding-left: 40px; z-index: 40;}
+    .vs_tit { font-style: 42px; line-height: 1.6;}
+    .vs_com { font-style: 16px; padding-top: 20px;}
+    .btn_group { position: absolute; bottom: 0px; left: 90px; z-index: 40;}
+    .btn_group button {display: block; width: 80px; height: 80px; float: left;
+    background-color: rgba(0, 0, 0, 0.6); border: none; outline: none; color: #fff;}
+    .btn_group button i[class*='xi'] { color: #fff;}
+    .btn_group button:hover i[class*='xi'] {cursor: pointer; color: gold;}
+    /* 그리드 */
+    .grid_box { clear: both; width: 100%; }
+    .grid_wrap { clear:both; width: 100%; }
+    .grid_wrap li { float:left; height: 16.66667vw; background-position: center center; }
+    .grid_wrap li.item1 { background-image: url("./source file/product/main store/reco_exhibit_bnr__01-m.png"); background-repeat : no-repeat; background-size : cover;} 
+    .grid_wrap li.item2 { background-image: url("./source file/customer support/homeservice benner/home_service_banner_02_220117.png"); background-repeat : no-repeat; background-size : cover; } 
+    .grid_wrap li.item3 { background-image: url("./source file/customer support/homeservice benner/home_service_banner_03_220117.png"); background-repeat : no-repeat; background-size : cover; } 
+    .grid_wrap li.item4 { background-image: url("./source file/product/main store/reco_exhibit_bnr__02-m.png"); background-repeat : no-repeat; background-size : cover;}
+    .grid_wrap li.item5 { background-image: url("./source file/product/main store/hero-mo__wedding.png"); background-repeat : no-repeat; background-size : cover;}
+    .grid_wrap li.item6 { background-image: url("./source file/product/main store/hero-mo__lgacademy.png"); background-repeat : no-repeat; background-size : cover;}
+    .grid_wrap li a { display:block; padding: 28px; }
+    .col_tit { padding-top: 18px; }
+    .col_tit, .col_com { color:#fff; text-shadow:1px 1px 1px #333; }
+    .col_tit.w , .col_com.w { color:#fff; text-shadow:1px 1px 1px #333; }
+    .col_com { font-size:12px; padding-top: 20px; font-weight: 200;  }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./source file/main/header/lg_logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>제품/소모품</span>
+                            <ul class="sub">
+                                <li><a href="sub1.html#page1">TV/AV</a></li>
+                                <li><a href="sub1.html#page2">IT</a></li>
+                                <li><a href="sub1.html#page3">주방가전</a></li>
+                                <li><a href="sub1.html#page4">생활가전</a></li>
+                                <li><a href="sub1.html#page5">에어컨/에어케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sub2.html#page1">제품 사용지원</a></li>
+                                <li><a href="sub2.html#page2">서비스 상담</a></li>
+                                <li><a href="sub2.html#page3">서비스 예약</a></li>
+                                <li><a href="sub2.html#page4">센터/매장 찾기</a></li>
+                                <li><a href="sub2.html#page5">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>렌탈/케어</span>
+                            <ul class="sub">
+                                <li><a href="sub3.html#page1">제품</a></li>
+                                <li><a href="sub3.html#page2">서비스 소개</a></li>
+                                <li><a href="sub3.html#page3">계정관리</a></li>
+                                <li><a href="sub3.html#page4">고객혜택</a></li>
+                                <li><a href="sub3.html#page5">고객지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>이벤트/멤버십</span>
+                            <ul class="sub">
+                                <li><a href="sub4.html#page1">멤버십</a></li>
+                                <li><a href="sub4.html#page2">이벤트</a></li>
+                                <li><a href="sub4.html#page3">기획전</a></li>
+                                <li><a href="sub4.html#page4">엘라쇼</a></li>
+                                <li><a href="sub4.html#page5">카드혜택</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>스토리</span>
+                            <ul class="sub">
+                                <li><a href="sub5.html#page1">라이프</a></li>
+                                <li><a href="sub5.html#page2">인사이드</a></li>
+                                <li><a href="sub5.html#page3">가이드&팁</a></li>
+                                <li><a href="sub5.html#page4">리뷰</a></li>
+                                <li><a href="sub5.html#page5">아카이브</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">사이트맵</a>
+                    <a href="">오시는길</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">
+                            <img src="./source file/main/content up/UP_pc_img0124.webp" alt="스마트폰" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">당신에게 맞춰 <br>계속 더 좋아지는 가전</h2>
+                                <p class="vs_com">쓸수록 새로워지는 LG UP 가전을 만나보세요</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./source file/main/content up/pc_movie01.jpg" alt="노트북" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">당신의 빛나는 라이프</h2>
+                                <p class="vs_com">예술과 기술이 조화를 이룬 차원이 다른 올레드,LG 올레드 evo 오브제컬랙션</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./source file/main/content up/spring_img_pc.webp" alt="폴더폰" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">LG가전 기획전</h2>
+                                <p class="vs_com">우리집에 봄을 심다 | 2022.04.01~04.30</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./source file/main/content up/gram_img_pc.jpg" alt="스마트폰화소자" class="pic">
+                            <div class="tit_box">
+                                <h2 class="vs_tit">강력한 퍼포먼스도 그램답게 가볍게</h2>
+                                <p class="vs_com">역대급 성능으로 또 한번의 혁신을 이루어낸 2022 LG gram을 만나보세요</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn_group">
+                    <button class="prev_btn"><i class="xi-arrow-left"></i></button>
+                    <button class="next_btn"><i class="xi-arrow-right"></i></button>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        wd = $(window).width();
+                        var intv = setInterval(function(){
+                            ani1();
+                        }, 3000);
+                        function ani1(){
+                            $(".img_box").not(":animated").animate({"margin-left":-wd+"px"}, 550, function(){
+                                $(".img_box li").eq(0).appendTo($(".img_box"));
+                                $(".img_box").css("margin-left","0px");
+                            });
+                        }
+                        function ani2(){
+                        $(".img_box").css("margin-left",-wd+"px");
+                        $(".img_box li:last-child").prependTo($(".img_box"));
+                        $(".img_box").not(":animated").animate({"margin-left":"0px"}, 600);
+                        }
+                        $(".btn_group .next_btn").click(function(){
+                            clearInterval(intv);
+                            ani1();
+                            intv = setInterval(function(){ ani1(); }, 3000);
+                        });
+                        $(".btn_group .prev_btn").click(function(){
+                            clearInterval(intv);
+                            ani2();
+                            intv = setInterval(function(){ ani1(); }, 3000);
+                        });
+                    });    
+                    </script>    
+            </div>
+            <div class="grid_box">
+                <ul class="grid_wrap">
+                    <li class="col2 item1">
+                        <a href="">
+                            <h3 class="col_tit">TV/AV</h3>
+                            <p class="col_com">LG 올레드 evo Objet Collection</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item2">
+                        <a href="">
+                            <h3 class="col_tit">서비스 상담</h3>
+                            <p class="col_com">챗봇상담, 전화상담예약, 이메일문의, 영상상담예약, 원격상담예약</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item3">
+                        <a href="">
+                            <h3 class="col_tit">서비스 예약</h3>
+                            <p class="col_com">출장서비스예약, 센터방문예약, 이전설치 예약/조회, 예약결과 조회/변경</p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2 item4">
+                        <a href="">
+                            <h3 class="col_tit w">제품</h3>
+                            <p class="col_com w">정수기, 얼음정수기냉장고, 공기청정기, 공기청정팬, 의류건조기 등</p>
+                        </a>
+                    </li>
+                    <li class="col2 item5">
+                        <a href="">
+                            <h3 class="col_tit w">이벤트</h3>
+                            <p class="col_com w">LG전자 고객만을 위해 준비한 특별한 서비스 및 혜택을 드립니다</p>
+                        </a>
+                    </li>
+                    <li class="col2 item6">
+                        <a href="">
+                            <h3 class="col_tit w">가이드&팁</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">사이트맵</a>
+                    <a href="">Contact US</a>
+                    <a href="">회원약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">보안신고센터</a>
+                    <a href="">협력사</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="https://www.facebook.com/" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="https://www.youtube.com/" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="https://post.naver.com/navigator.naver" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © 2022 LG Electronics. All Rights Reserved. 대표번호 : 02-3777-1114</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

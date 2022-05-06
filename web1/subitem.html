@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/hansung.ico">
+    <link rel="apple-touch-icon" href="./img/hansung.ico">
+    <!-- 검색메타 정보 -->
+    <meta name="og:url" content="">
+    <meta name="og:title" content="한성컴퓨터">
+    <meta name="og:description" content="한성컴퓨터 매장">
+    <meta name="keywords" content="한성,컴퓨터,한성컴퓨터,모니터,데스크탑,한성데스크탑">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="한성컴퓨터">
+    <meta property="og:description" content="한성컴퓨터 매장">
+    <meta property="og:image" content="./img/top_logo.png">
+    <title>한성컴퓨터 프로젝트</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 스타일초기화 -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- 커먼css -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <!-- 웹 폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'HaenamFont';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/HaenamFont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <!-- 웹 아이콘 연결 -->
+    <!-- xeicon (https://xpressengine.github.io/XEIcon/)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+
+
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                
+                <a href="index.html" class="logo">
+                    <img src="./img/top_logo.png" alt="">
+                    <i class="xi-star-o xi-spin"></i>
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>노트북</span>
+                            <ul class="sub">
+                                <li><a href="notebook.html#page1">13형대 노트북</a></li>
+                                <li><a href="notebook.html#page1">14형대 노트북</a></li>
+                                <li><a href="notebook.html#page1">15형대 노트북</a></li>
+                                <li><a href="notebook.html#page1">17형대 노트북</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>데스크탑</span>
+                            <ul class="sub">
+                                <li><a href="desktop.html#page1">사무용/교육용</a></li>
+                                <li><a href="desktop.html#page2">3D게임/그래픽용</a></li>
+                                <li><a href="desktop.html#page3">고성능/전문가용</a></li>
+                                <li><a href="desktop.html#page4">특가제품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모니터</span>
+                            <ul class="sub">
+                                <li><a href="monitor.html#page1">24형</a></li>
+                                <li><a href="monitor.html#page2">27형</a></li>
+                                <li><a href="monitor.html#page3">32형</a></li>
+                                <li><a href="monitor.html#page4">40형</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>TV</span>
+                            <ul class="sub">
+                                <li><a href="tv.html#page1">55형</a></li>
+                                <li><a href="tv.html#page2">65형</a></li>
+                                <li><a href="tv.html#page3">75형</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>주변기기</span>
+                            <ul class="sub">
+                                <li><a href="subitem.html#page1">키보드</a></li>
+                                <li><a href="subitem.html#page2">마우스</a></li>
+                                <li><a href="subitem.html#page3">스피커</a></li>
+                                <li><a href="subitem.html#page4">웹캠</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">회원가입</a>
+                    <a href="">고객센터</a>
+                    <a href="">공지사항</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <hr>
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>주변기기</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="subitem.html#page1" selected>키보드</option>
+                                    <option value="subitem.html#page2">마우스</option>
+                                    <option value="subitem.html#page3">스피커</option>
+                                    <option value="subitem.html#page4">웹캠</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/subitem1.jpg" alt="주변기기">
+                            </div>
+                            <h4>한성컴퓨터 TFG ARF 체리 게이밍기계식 한글</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>스위치</th>
+                                    <td>기계식 / MX 체리스위치</td>
+                                </tr>
+                                <tr>
+                                    <th>규격</th>
+                                    <td>104키</td>
+                                </tr>
+                                <tr>
+                                    <th>LED</th>
+                                    <td>RGB 백라이트</td>
+                                </tr>
+                                <tr>
+                                    <th>키캡</th>
+                                    <td>PBT 이중사출키캡 / 한글레이저 각인</td>
+                                </tr>
+                                <tr>
+                                    <th>부가기능</th>
+                                    <td>무한동시입력지원</td>
+                                </tr>
+                                <tr>
+                                    <th>사이즈</th>
+                                    <td>443 x 137 x 45.5mm</td>
+                                </tr>
+                                <tr>
+                                    <th>무게</th>
+                                    <td>1.550g</td>
+                                </tr>
+                                <tr>
+                                    <th>연결방식</th>
+                                    <td>USB Type C to A 방식</td>
+                                </tr>
+                                <tr>
+                                    <th>케이블길이</th>
+                                    <td>150±10cm</td>
+                                </tr>
+                                <tr>
+                                    <th>색상</th>
+                                    <td>블랙/실버</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div class="main_img">
+                                <img src="./img/subitem1_i.jpg" alt="본문">
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="page" id="page2">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>주변기기</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="subitem.html#page1">키보드</option>
+                                    <option value="subitem.html#page2" selected>마우스</option>
+                                    <option value="subitem.html#page3">스피커</option>
+                                    <option value="subitem.html#page4">웹캠</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/subitem2.jpg" alt="주변기기">
+                            </div>
+                            <h4>VM100 OfficeMaster 무선 버티컬마우스 (블랙/화이트/핑크)</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>연결방식</th>
+                                    <td>블루투스 5.0 + USB 리시버 1ch</td>
+                                </tr>
+                                <tr>
+                                    <th>센서</th>
+                                    <td>Pixart PAW 3205</td>
+                                </tr>
+                                <tr>
+                                    <th>버튼수명</th>
+                                    <td>3,000,000회 이상</td>
+                                </tr>
+                                <tr>
+                                    <th>버튼</th>
+                                    <td>6버튼</td>
+                                </tr>
+                                <tr>
+                                    <th>M/B</th>
+                                    <td>[업그레이드] ASRock B560M PRO4</td>
+                                </tr>
+                                <tr>
+                                    <th>DPI</th>
+                                    <td>3단계 조절(800-1200-1600)</td>
+                                </tr>
+                                <tr>
+                                    <th>수신거리</th>
+                                    <td>10M</td>
+                                </tr>
+                                <tr>
+                                    <th>배터리</th>
+                                    <td>500mAh</td>
+                                </tr>
+                                <tr>
+                                    <th>LED</th>
+                                    <td>RGB</td>
+                                </tr>
+                                <tr>
+                                    <th>사이즈</th>
+                                    <td>115 x 87 x 75mm</td>
+                                </tr>
+                                <tr>
+                                    <th>무게</th>
+                                    <td>108g(±5g)</td>
+                                </tr>
+                                <tr>
+                                    <th>색상</th>
+                                    <td>블랙/화이트/핑크</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div class="main_img">
+                                <img src="./img/subitem2_i.jpg" alt="본문">
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="page" id="page3">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>주변기기</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="subitem.html#page1">키보드</option>
+                                    <option value="subitem.html#page2">마우스</option>
+                                    <option value="subitem.html#page3" selected>스피커</option>
+                                    <option value="subitem.html#page4">웹캠</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/subitem3.jpg" alt="주변기기">
+                            </div>
+                            <h4>SIROCO GS400 2채널 스피커 (블랙/화이트)</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>타입</th>
+                                    <td>2ch 스피커</td>
+                                </tr>
+                                <tr>
+                                    <th>출력</th>
+                                    <td>R.M.S (20Wx2)</td>
+                                </tr>
+                                <tr>
+                                    <th>재생주파수</th>
+                                    <td>25Hz~20KHz</td>
+                                </tr>
+                                <tr>
+                                    <th>전원</th>
+                                    <td>C220-240V~50 / 60Hz,0.15A</td>
+                                </tr>
+                                <tr>
+                                    <th>사이즈</th>
+                                    <td>480(W)x180(D)x268(H)mm</td>
+                                </tr>
+                                <tr>
+                                    <th>무게</th>
+                                    <td>4.04kg(2개)</td>
+                                </tr>
+                                <tr>
+                                    <th>스피커 연결 선</th>
+                                    <td>2.5m (클립형 연결단자)</td>
+                                </tr>
+                                <tr>
+                                    <th>색상</th>
+                                    <td>블랙/화이트</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div class="main_img">
+                                <img src="./img/subitem3_i.jpg" alt="웹캠본문">
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="page" id="page4">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>주변기기</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="subitem.html#page1">키보드</option>
+                                    <option value="subitem.html#page2">마우스</option>
+                                    <option value="subitem.html#page3">스피커</option>
+                                    <option value="subitem.html#page4" selected>웹캠</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/subitem4.jpg" alt="웹캠">
+                            </div>
+                            <h4>HW20 2K QHD 웹캠 (블랙/화이트)</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>타입</th>
+                                    <td>2K QHD 웹캠(2560*1440)</td>
+                                </tr>
+                                <tr>
+                                    <th>연결방식</th>
+                                    <td>USB 연결(Plug&Play)</td>
+                                </tr>
+                                <tr>
+                                    <th>렌즈</th>
+                                    <td>Glass Lens</td>
+                                </tr>
+                                <tr>
+                                    <th>시야각</th>
+                                    <td>D:89도/H:78도/V:43도</td>
+                                </tr>
+                                <tr>
+                                    <th>영상압축</th>
+                                    <td>MJPEG/YUV</td>
+                                </tr>
+                                <tr>
+                                    <th>부가기능</th>
+                                    <td>오토화이트밸런스/안면인식기술</td>
+                                </tr>
+                                <tr>
+                                    <th>마이크</th>
+                                    <td>듀얼마이크 내장</td>
+                                </tr>
+                                <tr>
+                                    <th>사이즈</th>
+                                    <td>72(W)x60(D)x58(H)mm</td>
+                                </tr>
+                                <tr>
+                                    <th>무게</th>
+                                    <td>130g</td>
+                                </tr>
+                                <tr>
+                                    <th>OS지원</th>
+                                    <td>Windows XP이상/Mac OS/Android 5.0이상/리눅스/크롬OS/XBOX one/우분투</td>
+                                </tr>
+                                <tr>
+                                    <th>구성품</th>
+                                    <td>웹캠/렌즈커버/브라켓/거치대/설명서</td>
+                                </tr>
+                                <tr>
+                                    <th>색상</th>
+                                    <td>블랙/화이트</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <div class="main_img">
+                                <img src="./img/subitem4_i.jpg" alt="웹캠본문">
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".sel").change(function(){
+                        location.href = this.value;
+                    });
+                });    
+            </script>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="https://www.kca.go.kr/home/main.do" target='_blank'>소비자보호원</a>
+                    <a href="https://www.kca.go.kr/home/main.do" target='_blank'>전자거래분쟁조정위원회</a>
+                    <a href="">제휴문의</a>
+                </nav>
+                <nav class="snb">
+                    <li class="sns1">
+                        <a href="https://www.youtube.com/" title="유튜브" target='_blank'><i class="xi-youtube-play"></i></a>
+                    </li>
+                    <li class="sns2">
+                        <a href="https://www.naver.com/" title="네이버" target='_blank'><i class="xi-naver"></i></a>
+                    </li>
+                    <li class="sns3">
+                        <a href="https://www.google.co.kr/" title="구글" target='_blank'><i class="xi-google"></i></a>
+                    </li>
+                </nav>
+                <p class="copyright">좋은 컴퓨터를 만드는 사람들</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

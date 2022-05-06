@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./source file/shortcut icon/favicon.png">
+    <link rel="apple-touch-icon" href="./source file/shortcut icon/favicon.png">
+    <!-- 검색(메타) 정보 -->
+    <meta name="url" content="https://www.lge.co.kr/">
+    <meta name="title" content="LG전자">
+    <meta name="description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta name="keywords" content="LG전자,LG,전자">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.lge.co.kr">
+    <meta property="og:title" content="LG전자">
+    <meta property="og:description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta property="og:image" content="./source file/shortcut icon/favicon.png">
+    <title>LG전자</title>
+    <!-- 기본 플러그인 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹 폰트/폰트 모듈 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: 'scB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    } 
+    @font-face {
+        font-family: 'ROKAF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }   
+    </style>
+    <!-- 웹 아이콘 연결 -->
+    <!-- XEIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./sub_common.css">
+    <link rel="stylesheet" href="./col.css">
+    <style>
+        .page_con { margin-top: 50px;}
+        .title { font-size: 25px;}
+        .s_tit { font-size: 20px; margin-top: 10px;}
+        .s_con { font-size: 15px;}
+        .page_wrap { margin-bottom: 25px;}
+        .page_wrap2 { width: 100%;  }
+        .grid_box { clear: both; width: 100%; }
+        .grid_wrap1 { clear:both; width: 100%; }
+        .grid_wrap1 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap1 li.item1 { background-image: url("./source file/md09062827-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item2 { background-image: url("./source file/md09155850-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item3 { background-image: url("./source file/md09023828-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item4 { background-image: url("./source file/md09155831-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li.item5 { background-image: url("./source file/md09155832-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li.item6 { background-image: url("./source file/md08976836-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li a { display:block; padding: 28px; }
+        .grid_wrap2 { clear:both; width: 100%; }
+        .grid_wrap2 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap2 li.item1 { background-image: url("./source file/md09161836-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item2 { background-image: url("./source file/md09117830-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item3 { background-image: url("./source file/md09075831-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item4 { background-image: url("./source file/md09091852-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li.item5 { background-image: url("./source file/md08987828-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li.item6 { background-image: url("./source file/md08976836-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li a { display:block; padding: 28px; }
+        .grid_wrap3 { clear:both; width: 100%; }
+        .grid_wrap3 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap3 li.item1 { background-image: url("./source file/md09072848-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item2 { background-image: url("./source file/md09029831-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item3 { background-image: url("./source file/md09143842-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item4 { background-image: url("./source file/md09087826-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li.item5 { background-image: url("./source file/md08042688-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li.item6 { background-image: url("./source file/md09172827-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li a { display:block; padding: 28px; }
+        .grid_wrap4 { clear:both; width: 100%; }
+        .grid_wrap4 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap4 li.item1 { background-image: url("./source file/md09089827-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item2 { background-image: url("./source file/md09092850-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item3 { background-image: url("./source file/md09123826-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item4 { background-image: url("./source file/md08046024-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li.item5 { background-image: url("./source file/md08045145-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li.item6 { background-image: url("./source file/md09171827-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li a { display:block; padding: 28px; }
+        .grid_wrap5 { clear:both; width: 100%; }
+        .grid_wrap5 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap5 li.item1 { background-image: url("./source file/md09107894-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item2 { background-image: url("./source file/md09107827-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item3 { background-image: url("./source file/md08922105-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item4 { background-image: url("./source file/PW1453T9CRC_350-350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li.item5 { background-image: url("./source file/md09142827-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li.item6 { background-image: url("./source file/md09134829-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li a { display:block; padding: 28px; }
+        .col_tit { margin-top: 50%; }
+        .col_tit, .col_com { color:#333; text-shadow:1px 1px 1px #fff; }
+        .col_tit.w , .col_com.w { color:#333; text-shadow:1px 1px 1px #fff; }
+        .col_com { font-size:12px; padding-top: 20px; font-weight: 200;  }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./source file/main/header/lg_logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>제품/소모품</span>
+                            <ul class="sub">
+                                <li><a href="sub1.html#page1">TV/AV</a></li>
+                                <li><a href="sub1.html#page2">IT</a></li>
+                                <li><a href="sub1.html#page3">주방가전</a></li>
+                                <li><a href="sub1.html#page4">생활가전</a></li>
+                                <li><a href="sub1.html#page5">에어컨/에어케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sub2.html#page1">제품 사용지원</a></li>
+                                <li><a href="sub2.html#page2">서비스 상담</a></li>
+                                <li><a href="sub2.html#page3">서비스 예약</a></li>
+                                <li><a href="sub2.html#page4">센터/매장 찾기</a></li>
+                                <li><a href="sub2.html#page5">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>렌탈/케어</span>
+                            <ul class="sub">
+                                <li><a href="sub3.html#page1">제품</a></li>
+                                <li><a href="sub3.html#page2">서비스 소개</a></li>
+                                <li><a href="sub3.html#page3">계정관리</a></li>
+                                <li><a href="sub3.html#page4">고객혜택</a></li>
+                                <li><a href="sub3.html#page5">고객지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>이벤트/멤버십</span>
+                            <ul class="sub">
+                                <li><a href="sub4.html#page1">멤버십</a></li>
+                                <li><a href="sub4.html#page2">이벤트</a></li>
+                                <li><a href="sub4.html#page3">기획전</a></li>
+                                <li><a href="sub4.html#page4">엘라쇼</a></li>
+                                <li><a href="sub4.html#page5">카드혜택</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>스토리</span>
+                            <ul class="sub">
+                                <li><a href="sub5.html#page1">라이프</a></li>
+                                <li><a href="sub5.html#page2">인사이드</a></li>
+                                <li><a href="sub5.html#page3">가이드&팁</a></li>
+                                <li><a href="sub5.html#page4">리뷰</a></li>
+                                <li><a href="sub5.html#page5">아카이브</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">사이트맵</a>
+                    <a href="">오시는길</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./source file/20211216_pc_visual.webp" alt="TV/AV">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">TV/AV</h2>
+                            <p class="sub_com">예술과 기술이 조화를 이룬 차원이 다른 올레드</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">제품/소모품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub1.html#page1" selected>TV/AV</option>
+                                        <option value="sub1.html#page2">IT</option>
+                                        <option value="sub1.html#page3">주방가전</option>
+                                        <option value="sub1.html#page4">생활가전</option>
+                                        <option value="sub1.html#page5">에어컨/에어케어</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>TV/AV</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">올레드TV란</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-스스로 빛을 내 백라이트가 필요 없어 매우 얇고, 필요한 곳에만 스스로 빛을 내 무한대의 명암비, 우수한 색 재현이 가능합니다</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">QNED TV는</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-퀀텀닷 나노셀 컬러 테크놀로지로 밝고 선명한 화질,섬세한 명암 표현, 정확하고 풍부한 색 표현이 가능합니다</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">나노셀TV는</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-LCD표면에 약 1나노미터(nm)의 나노 입자를 입혀 색 정확도와 색 재현력을 끌어올렸습니다. 어느 각도에서 보더라도 색 왜곡 현상이 거의 없어 넓은 시야각을 확보할 수 있습니다</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">울트라 HD TV는</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-FULL HD(1920*1080)보다 4배 더 많은 픽셀(3840*2160)로 정교하게 화질을 표현해 더 선명하고 섬세한 화질 표현이 가능합니다</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap1">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">라이프스타일스크린</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">올레드 TV</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">QNED TV</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">나노셀 TV</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">울트라 TV</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">일반 LED TV</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./source file/pc-hero-d.webp" alt="IT">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">IT</h2>
+                            <p class="sub_com">두 개의 화면을 대화면을 하나처럼 자유롭게</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">제품/소모품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="sub1.html#page1">TV/AV</option>
+                                        <option value="sub1.html#page2" selected>IT</option>
+                                        <option value="sub1.html#page3">주방가전</option>
+                                        <option value="sub1.html#page4">생활가전</option>
+                                        <option value="sub1.html#page5">에어컨/에어케어</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>IT</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">노트북</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-그램, 울트라 기어, 울트라 PC</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">로봇</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-서빙로봇, 안내로봇, UVC로봇</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">모니터</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-PC모니터, TV모니터, IPTV모니터, 클라우드 모니터</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">케어용품/소모품</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-노트북, 모니터, 데스크톱, 프린터</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap2">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">그램</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">울트라 기어</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">서빙로봇</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">안내로봇</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">PC모니터</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">TV모니터</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="./source file/20210416_PLP_refrigerator_hero.webp" alt="주방가전">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">주방가전</h2>
+                            <p class="sub_com">변화는 언제나 디오스로부터 LG DIOS 얼음정수기냉장고</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">제품/소모품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="sub1.html#page1">TV/AV</option>
+                                        <option value="sub1.html#page2">IT</option>
+                                        <option value="sub1.html#page3" selected>주방가전</option>
+                                        <option value="sub1.html#page4">생활가전</option>
+                                        <option value="sub1.html#page5">에어컨/에어케어</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>주방가전</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">냉장고</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-정수기형, 상냉장/하냉동, 양문형, 일반형, 비즈니스, 와인셀러</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">김치냉장고</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-스탠드형, 뚜껑식형, 프리스타일</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">전기레인지</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-인덕션, 하이브리드, 하이라이트</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">정수기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-냉온정수기, 냉정수기, 정수전용</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap3">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">정수기형</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">양문형</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">스탠드형</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">하이라이트</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">인덕션</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">냉온정수기</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="./source file/20211230_PLP_wash_hero_pc.webp" alt="생활가전">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">생활가전</h2>
+                            <p class="sub_com">하나의 바디 두개의 세탁기 LG TROMM 트윈워시</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">제품/소모품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="sub1.html#page1">TV/AV</option>
+                                        <option value="sub1.html#page2">IT</option>
+                                        <option value="sub1.html#page3">주방가전</option>
+                                        <option value="sub1.html#page4" selected>생활가전</option>
+                                        <option value="sub1.html#page5">에어컨/에어케어</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>생활가전</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">세탁기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-트윈워시, 트롬, 통돌이, 미니세탁기</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">청소기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-코드제로 A9S, 코드제로 R9, 코드제로 M9, 로보킹, 싸이킹, 잔디깎이 로봇</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">워시타워</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-의류건조기, 스타일러, 식물생활가전, 안마의자</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">케어용품/소모품</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-세탁기, 의류건조기, 스타일러, 청소기</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap4">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">트윈워시</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">트롬</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">통돌이</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">싸이킹</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">로보킹</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">잔디깎이로봇</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="./source file/22020126_PLP_air_conditioner_hero.webp" alt="에어컨/에어케어">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">에어컨/에어케어</h2>
+                            <p class="sub_com">속부터 깨끗한 바람 LG WHISEN 타워에어컨</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">제품/소모품</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel2" class="sel">
+                                        <option value="sub1.html#page1">TV/AV</option>
+                                        <option value="sub1.html#page2">IT</option>
+                                        <option value="sub1.html#page3">주방가전</option>
+                                        <option value="sub1.html#page4">생활가전</option>
+                                        <option value="sub1.html#page5" selected>에어컨/에어케어</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>에어컨/에어케어</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">에어컨</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-스탠드형, 2in 1, 3in 1, 벽걸이형, 이동식 에어컨</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">시스템 에어컨</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">주거용 에어컨, 상업용 스탠드, 상업용 천장형</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">공기청정기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-공기청정기, 휴대용 공기청정기, 가습 공기청정기</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">케어용품/소모품</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-에어컨, 공기청정기/에어케어</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap5">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">2in 1</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">벽걸이형</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">주거용에어컨</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">상업용에어컨</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">공기청정기</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">휴대용공기청정기</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">사이트맵</a>
+                    <a href="">Contact US</a>
+                    <a href="">회원약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">보안신고센터</a>
+                    <a href="">협력사</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="https://www.facebook.com/" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="https://www.youtube.com/" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="https://post.naver.com/navigator.naver" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © 2022 LG Electronics. All Rights Reserved. 대표번호 : 02-3777-1114</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="110" viewBox="0 0 104 110">
+    <defs>
+        <linearGradient id="a" x1="1" y1="1" x2="0" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fb5a72"/>
+            <stop offset="1" stop-color="#fa263e"/>
+        </linearGradient>
+    </defs>
+    <path d="M0 8a8 8 0 0 1 8-8h96v94.135L49.92 110 0 94.135z" style="fill:url(#a)"/>
+    <g data-name="Group 2">
+        <path data-name="1" d="M12.46 20.72v-3.332H8.568V0H5.516A13.44 13.44 0 0 1 .7 1.736v2.548h3.752v13.1H0v3.336z" transform="translate(46.55 60.28)" style="fill:#fff"/>
+        <text transform="translate(24 47)" style="font-size:23px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#fff"><tspan x="0" y="0">BEST</tspan></text>
+    </g>
+</svg>

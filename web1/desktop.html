@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/hansung.ico">
+    <link rel="apple-touch-icon" href="./img/hansung.ico">
+    <!-- 검색메타 정보 -->
+    <meta name="og:url" content="">
+    <meta name="og:title" content="한성컴퓨터">
+    <meta name="og:description" content="한성컴퓨터 매장">
+    <meta name="keywords" content="한성,컴퓨터,한성컴퓨터,모니터,데스크탑,한성데스크탑">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="한성컴퓨터">
+    <meta property="og:description" content="한성컴퓨터 매장">
+    <meta property="og:image" content="./img/top_logo.png">
+    <title>한성컴퓨터 프로젝트</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 스타일초기화 -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- 커먼css -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <!-- 웹 폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'HaenamFont';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/HaenamFont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <!-- 웹 아이콘 연결 -->
+    <!-- xeicon (https://xpressengine.github.io/XEIcon/)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+
+
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                
+                <a href="index.html" class="logo">
+                    <img src="./img/top_logo.png" alt="">
+                    <i class="xi-star-o xi-spin"></i>
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>노트북</span>
+                            <ul class="sub">
+                                <li><a href="notebook.html#page1">13형대 노트북</a></li>
+                                <li><a href="notebook.html#page1">14형대 노트북</a></li>
+                                <li><a href="notebook.html#page1">15형대 노트북</a></li>
+                                <li><a href="notebook.html#page1">17형대 노트북</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>데스크탑</span>
+                            <ul class="sub">
+                                <li><a href="desktop.html#page1">사무용/교육용</a></li>
+                                <li><a href="desktop.html#page2">3D게임/그래픽용</a></li>
+                                <li><a href="desktop.html#page3">고성능/전문가용</a></li>
+                                <li><a href="desktop.html#page4">특가제품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>모니터</span>
+                            <ul class="sub">
+                                <li><a href="monitor.html#page1">24형</a></li>
+                                <li><a href="monitor.html#page2">27형</a></li>
+                                <li><a href="monitor.html#page3">32형</a></li>
+                                <li><a href="monitor.html#page4">40형</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>TV</span>
+                            <ul class="sub">
+                                <li><a href="tv.html#page1">55형</a></li>
+                                <li><a href="tv.html#page2">65형</a></li>
+                                <li><a href="tv.html#page3">75형</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>주변기기</span>
+                            <ul class="sub">
+                                <li><a href="subitem.html#page1">키보드</a></li>
+                                <li><a href="subitem.html#page2">마우스</a></li>
+                                <li><a href="subitem.html#page3">스피커</a></li>
+                                <li><a href="subitem.html#page4">웹캠</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">회원가입</a>
+                    <a href="">고객센터</a>
+                    <a href="">공지사항</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <hr>
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>데스크탑</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                        <option value="desktop.html#page1" selected>사무용/교육용</option>
+                                        <option value="desktop.html#page2">3D게임 그래픽용</option>
+                                        <option value="desktop.html#page3">고성능/전문가용</option>
+                                        <option value="desktop.html#page4">특가제품</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/desktop1.jpg" alt="데스크탑">
+                            </div>
+                            <h4>프리워커 F2500W/인텔 10세대 i5 10400</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>O/S</th>
+                                    <td>Window 11 HOME</td>
+                                </tr>
+                                <tr>
+                                    <th>A/S</th>
+                                    <td>한성컴퓨터 1년 보증 무상 출장 방문서비스</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU</th>
+                                    <td>인텔 10세대 코어 i5 10400 (2.9GHz~4.3GHz/6코어/12쓰레드) 코멧레이크S</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU 쿨러</th>
+                                    <td>CPU쿨러 인텔CPU용</td>
+                                </tr>
+                                <tr>
+                                    <th>M/B</th>
+                                    <td>[업그레이드]ASRock H510M-HDV/M.2</td>
+                                </tr>
+                                <tr>
+                                    <th>RAM</th>
+                                    <td>삼성 DDR4 8GB PC4-25600 (8GB x 1)</td>
+                                </tr>
+                                <tr>
+                                    <th>VGA</th>
+                                    <td>Intel UHD630 Graphics (내장)</td>
+                                </tr>
+                                <tr>
+                                    <th>SSD</th>
+                                    <td>SSD 2.5형 256GB (ADATA Ultimate SU750)</td>
+                                </tr>
+                                <tr>
+                                    <th>CASE</th>
+                                    <td>프리워커 케이스</td>
+                                </tr>
+                                <tr>
+                                    <th>POWER</th>
+                                    <td>잘만 EcoMax 500W</td>
+                                </tr>
+                            </table>
+                            <div class="main_img">
+                                <img src="./img/desktop1_i.jpg" alt="본문">
+                                <img src="./img/desktop1_i2.jpg" alt="본문">
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="page" id="page2">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>데스크탑</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="desktop.html#page1">사무용/교육용</option>
+                                    <option value="desktop.html#page2" selected>3D게임 그래픽용</option>
+                                    <option value="desktop.html#page3">고성능/전문가용</option>
+                                    <option value="desktop.html#page4">특가제품</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/desktop2.jpg" alt="데스크탑">
+                            </div>
+                            <h4>TFG MX9465S / i5 10400F + GTX1650</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>O/S</th>
+                                    <td>Free DOS(운영체제 미탑재 모델/ 추가가능)</td>
+                                </tr>
+                                <tr>
+                                    <th>A/S</th>
+                                    <td>한성컴퓨터 1년 보증 무상 출장 방문서비스</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU</th>
+                                    <td>인텔 10세대 코어 i5 10400F (2.9GHz~4.3GHz/6코어/12쓰레드) 코멧레이크S</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU 쿨러</th>
+                                    <td>CPU쿨러 인텔CPU용</td>
+                                </tr>
+                                <tr>
+                                    <th>M/B</th>
+                                    <td>[업그레이드] ASRock B560M PRO4</td>
+                                </tr>
+                                <tr>
+                                    <th>RAM</th>
+                                    <td>마이크론 DDR4 16GB PC4-25600 (8GB x 2)</td>
+                                </tr>
+                                <tr>
+                                    <th>VGA</th>
+                                    <td>MANLI 지포스 GTX 1650 D5 4GB</td>
+                                </tr>
+                                <tr>
+                                    <th>SSD</th>
+                                    <td>삼성 256GB M.2 NVMe SSD</td>
+                                </tr>
+                                <tr>
+                                    <th>CASE</th>
+                                    <td>블랙</td>
+                                </tr>
+                                <tr>
+                                    <th>POWER</th>
+                                    <td>잘만 GAMING 600W 83+</td>
+                                </tr>
+                            </table>
+                            <div class="main_img">
+                                <img src="./img/desktop2_i.jpg" alt="본문">
+                                <img src="./img/desktop2_i2.jpg" alt="본문">
+                                <img src="./img/desktop2_i3.jpg" alt="본문">
+                                <img src="./img/desktop2_i4.jpg" alt="본문">
+                                <img src="./img/desktop2_i5.jpg" alt="본문">
+                                <img src="./img/desktop2_i6.jpg" alt="본문">
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="page" id="page3">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>데스크탑</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="desktop.html#page1">사무용/교육용</option>
+                                    <option value="desktop.html#page2">3D게임 그래픽용</option>
+                                    <option value="desktop.html#page3" selected>고성능/전문가용</option>
+                                    <option value="desktop.html#page4">특가제품</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/desktop3.jpg" alt="데스크탑">
+                            </div>
+                            <h4>TFG DX5767RXT / 라이젠 5800X + RX6700XT</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>O/S</th>
+                                    <td>Free DOS(운영체제 미탑재 모델/ 추가가능)</td>
+                                </tr>
+                                <tr>
+                                    <th>A/S</th>
+                                    <td>한성컴퓨터 1년 보증 무상 출장 방문서비스</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU</th>
+                                    <td>AMD 라이젠7 5800X (8코어 16스레드 / 3.8GHz~4.7GHz)</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU 쿨러</th>
+                                    <td>수냉쿨러 archon TCT240 ARGB 블랙</td>
+                                </tr>
+                                <tr>
+                                    <th>M/B</th>
+                                    <td>[변경출고] MSI MPG B550 게이밍 카본 WiFi [2/28 14시 이후]</td>
+                                </tr>
+                                <tr>
+                                    <th>RAM</th>
+                                    <td>삼성 DDR4 16GB PC4-25600 (8GB x 2)</td>
+                                </tr>
+                                <tr>
+                                    <th>VGA</th>
+                                    <td>ASUS DUAL 라데온 RX 6700 XT O12G D6 12GB</td>
+                                </tr>
+                                <tr>
+                                    <th>SSD</th>
+                                    <td>삼성 PM9A1 M.2 NVMe 512GB / PCIe4.0x4 (64GT/s)</td>
+                                </tr>
+                                <tr>
+                                    <th>CASE</th>
+                                    <td>TFG DX 화이트</td>
+                                </tr>
+                                <tr>
+                                    <th>POWER</th>
+                                    <td>MSI MPG A850GF 80PLUS GOLD</td>
+                                </tr>
+                            </table>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="page" id="page4">
+                    
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>데스크탑</li>
+                            <li>
+                                <select name="sel" id="sel" class="sel">
+                                    <option value="desktop.html#page1">사무용/교육용</option>
+                                    <option value="desktop.html#page2">3D게임 그래픽용</option>
+                                    <option value="desktop.html#page3">고성능/전문가용</option>
+                                    <option value="desktop.html#page4" selected>특가제품</option>
+                                </select>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <figure>
+                            <div class="img_wrap">
+                                <img src="./img/desktop4.jpg" alt="기업개요">
+                            </div>
+                            <h4>미니슈트 i55 / 인텔 10세대 i5-10500</h4><hr>
+                            <table>
+                                <tr>
+                                    <th>O/S</th>
+                                    <td>Free DOS(운영체제 미탑재 모델/ 추가가능)</td>
+                                </tr>
+                                <tr>
+                                    <th>A/S</th>
+                                    <td>한성컴퓨터 1년 보증 무상 출장 방문서비스</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU</th>
+                                    <td>인텔 10세대 코어 i5 10500 (3.1GHz~4.5GHz/6코어/12쓰레드) 코멧레이크S</td>
+                                </tr>
+                                <tr>
+                                    <th>CPU 쿨러</th>
+                                    <td>CPU쿨러 인텔CPU용</td>
+                                </tr>
+                                <tr>
+                                    <th>M/B</th>
+                                    <td>ASRock H510M HDV/M.2</td>
+                                </tr>
+                                <tr>
+                                    <th>RAM</th>
+                                    <td>마이크론 DDR4 8GB PC4-25600 (8GB x 1)</td>
+                                </tr>
+                                <tr>
+                                    <th>VGA</th>
+                                    <td>Intel UHD630 Graphics (내장)</td>
+                                </tr>
+                                <tr>
+                                    <th>SSD</th>
+                                    <td>SSD 2.5형 256GB (ADATA Ultimate SU750)</td>
+                                </tr>
+                                <tr>
+                                    <th>CASE</th>
+                                    <td>미니슈트 케이스</td>
+                                </tr>
+                                <tr>
+                                    <th>POWER</th>
+                                    <td>잘만 EcoMax 500W</td>
+                                </tr>
+                            </table>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $(".sel").change(function(){
+                        location.href = this.value;
+                    });
+                });    
+            </script>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">회사소개</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="https://www.kca.go.kr/home/main.do" target='_blank'>소비자보호원</a>
+                    <a href="https://www.kca.go.kr/home/main.do" target='_blank'>전자거래분쟁조정위원회</a>
+                    <a href="">제휴문의</a>
+                </nav>
+                <nav class="snb">
+                    <li class="sns1">
+                        <a href="https://www.youtube.com/" title="유튜브" target='_blank'><i class="xi-youtube-play"></i></a>
+                    </li>
+                    <li class="sns2">
+                        <a href="https://www.naver.com/" title="네이버" target='_blank'><i class="xi-naver"></i></a>
+                    </li>
+                    <li class="sns3">
+                        <a href="https://www.google.co.kr/" title="구글" target='_blank'><i class="xi-google"></i></a>
+                    </li>
+                </nav>
+                <p class="copyright">좋은 컴퓨터를 만드는 사람들</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

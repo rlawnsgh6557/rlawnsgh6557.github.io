@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{ margin: 0; padding: 0;}
+        *{font-family: 'HaenamFont';}
+        ul { list-style:none; }
+        li { list-style:none; }
+        a {text-decoration: none; color: black;}
+        i[class*='xi'] {font-size: 25px;}
+        
+        /* 헤더 */
+        .wrap{clear:both; width: 100%;}
+        #hd {clear:both; width: 100%;}
+            .hd_wrap { clear:both; width: 1280px; margin: 0 auto; }
+            .logo {display:block; width: 200px; float:left; margin-top: 10px; margin-bottom: 10px;}
+            .logo img {display:block; float: left; width: 80%;}
+            #gnb {float: left;}
+            #gnb > ul > li {float: left; padding-left: 50px; padding-right: 20px; position: relative;}
+            #gnb > ul > li > span {display: block; line-height: 36px; cursor: pointer; margin-top: 15px;}
+            #gnb ul li .sub {display: none; position: absolute; left: 40px; top: 51px; z-index: 999; padding-left: 10px; width: 160px; height: 150px; background-color: bisque;}
+            #gnb ul li .sub li {line-height: 36px;}
+            #gnb ul li:hover .sub {display:block;}
+            #gnb ul li:hover span {color: crimson;}
+            #gnb ul li .sub li a:hover {color: crimson;}
+
+            #tnb {float: right; margin-top: 10px; padding-top: 10px; padding-bottom:14px;}
+            #tnb a { font-size: 0.85em; padding-left: 30px;}
+            #tnb a:hover {color:crimson; text-decoration: underline;}
+
+        /* 푸터 */
+        #ft {clear:both; width: 100%;}
+        .ft_wrap{clear: both; width: 1280px; margin: 0 auto;}
+        .fnb { float:left; }
+        .fnb a{ display:block; float:left; margin:14px; margin-left: 0; margin-right: 28px; font-size:14px; }
+        .fnb a:after { content:"|"; padding-left: 28px; }
+        .fnb a:last-child::after { content:""; }
+        .snb { float:right; }
+        .snb li { float:left; margin-left: 28px; }
+        .copyright { clear:both; padding-bottom: 28px; font-size:14px; }
+        i[class*='youtube']:hover {color: red;}
+        i[class*='naver']:hover {color: rgb(57, 223, 24);}
+        i[class*='google']:hover {color: rgb(35, 84, 245);}

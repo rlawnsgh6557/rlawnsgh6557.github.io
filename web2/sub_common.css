@@ -1,0 +1,17 @@
+@charset "UTF-8"; 
+.page { clear:both; min-height:100vh; display:none; width: 100%; }
+.sub_ban { clear:both; width: 100%; position:relative; }
+.sub_ban img { display:block; width: 100%; height:auto; }
+.tit_box { position:absolute; top:0px; left: 0px; z-index:30; padding-top: 150px; 
+padding-left: 100px; color:#333; text-shadow:1px 1px 1px #fff;}
+.sub_tit { font-size:48px; }
+.sub_com { font-size:20px; padding-top: 40px; }
+.bread_box { clear: both; width: 100%; height: 48px; border-bottom:3px solid #f1f1f1; }
+.bread_wrap { width: 1280px; margin: 0 auto; }
+.bread { height: 48px; line-height: 48px;  }
+.bread li { float:left; padding-right: 30px; }
+.bread li:after { content:">"; padding-left: 24px; }
+.bread li:last-child::after { content: ""; }
+.page:target { display:block; }
+.page_con { clear:both; width: 100%; }
+.page_wrap { width: 1280px; margin: 0 auto; }

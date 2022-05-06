@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-cate_icon_refrigerator_w">
+      <rect width="80" height="80"/>
+    </clipPath>
+  </defs>
+  <g id="cate_icon_refrigerator_w" clip-path="url(#clip-cate_icon_refrigerator_w)">
+    <g id="그룹_142" data-name="그룹 142" transform="translate(-136.23 0.5)">
+      <path id="패스_114" data-name="패스 114" d="M193.73,6.5h-34a4.5,4.5,0,0,0-4.5,4.5V69a4.5,4.5,0,0,0,4.5,4.5h34a4.505,4.505,0,0,0,4.5-4.5V11A4.505,4.505,0,0,0,193.73,6.5Zm1.5,4.5V42.5h-17V9.5h15.5A1.5,1.5,0,0,1,195.23,11Zm-35.5-1.5h15.5v33h-17V11A1.5,1.5,0,0,1,159.73,9.5ZM158.23,69V45.5h17v25h-15.5A1.5,1.5,0,0,1,158.23,69Zm35.5,1.5h-15.5v-25h17V69A1.5,1.5,0,0,1,193.73,70.5Z" fill="#fff"/>
+      <path id="패스_115" data-name="패스 115" d="M183.73,37.5h6a3.5,3.5,0,0,0,3.5-3.5V18a3.5,3.5,0,0,0-3.5-3.5h-6a3.5,3.5,0,0,0-3.5,3.5V34A3.5,3.5,0,0,0,183.73,37.5Zm-.5-19.5a.5.5,0,0,1,.5-.5h6a.5.5,0,0,1,.5.5V34a.5.5,0,0,1-.5.5h-6a.5.5,0,0,1-.5-.5Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

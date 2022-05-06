@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./source file/shortcut icon/favicon.png">
+    <link rel="apple-touch-icon" href="./source file/shortcut icon/favicon.png">
+    <!-- 검색(메타) 정보 -->
+    <meta name="url" content="https://www.lge.co.kr/">
+    <meta name="title" content="LG전자">
+    <meta name="description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta name="keywords" content="LG전자,LG,전자">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.lge.co.kr">
+    <meta property="og:title" content="LG전자">
+    <meta property="og:description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta property="og:image" content="./source file/shortcut icon/favicon.png">
+    <title>LG전자</title>
+    <!-- 기본 플러그인 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹 폰트/폰트 모듈 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: 'scB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    } 
+    @font-face {
+        font-family: 'ROKAF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }   
+    </style>
+    <!-- 웹 아이콘 연결 -->
+    <!-- XEIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./sub_common.css">
+    <link rel="stylesheet" href="./col.css">
+    <style>
+        .page_con { margin-top: 50px;}
+        .title { font-size: 25px;}
+        .s_tit { font-size: 20px; margin-top: 10px;}
+        .s_con { font-size: 15px;}
+        .page_wrap { margin-bottom: 25px;}
+        .page_wrap2 { width: 100%;  }
+        .grid_box { clear: both; width: 100%; }
+        .grid_wrap1 { clear:both; width: 100%; }
+        .grid_wrap1 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap1 li.item1 { background-image: url("./source file/md09010827-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item2 { background-image: url("./source file/md08920828-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item3 { background-image: url("./source file/md09143859-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item4 { background-image: url("./source file/md09091846-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li.item5 { background-image: url("./source file/md09109828-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li.item6 { background-image: url("./source file/md09092857-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li a { display:block; padding: 28px; }
+        .grid_wrap2 { clear:both; width: 100%; }
+        .grid_wrap2 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap2 li.item1 { background-image: url("./source file/md08920830-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item2 { background-image: url("./source file/md08040392-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item3 { background-image: url("./source file/md09099838-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item4 { background-image: url("./source file/md09147851-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li.item5 { background-image: url("./source file/md09036826-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li.item6 { background-image: url("./source file/md08045816-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li a { display:block; padding: 28px; }
+        .grid_wrap3 { clear:both; width: 100%; }
+        .grid_wrap3 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap3 li.item1 { background-image: url("./source file/md08747121-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item2 { background-image: url("./source file/md08042649-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item3 { background-image: url("./source file/md08919830-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item4 { background-image: url("./source file/md08037774-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li.item5 { background-image: url("./source file/md09031828-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li.item6 { background-image: url("./source file/md08045958-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li a { display:block; padding: 28px; }
+        .grid_wrap4 { clear:both; width: 100%; }
+        .grid_wrap4 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap4 li.item1 { background-image: url("./source file/md08918290-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item2 { background-image: url("./source file/md08748493-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item3 { background-image: url("./source file/md08043851-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item4 { background-image: url("./source file/md08927830-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li.item5 { background-image: url("./source file/md08045785-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li.item6 { background-image: url("./source file/md08921932-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li a { display:block; padding: 28px; }
+        .grid_wrap5 { clear:both; width: 100%; }
+        .grid_wrap5 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap5 li.item1 { background-image: url("./source file/md09072893-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item2 { background-image: url("./source file/md09072889-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item3 { background-image: url("./source file/md09072886-350x350.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item4 { background-image: url("./source file/md09070829-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li.item5 { background-image: url("./source file/md09112831-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li.item6 { background-image: url("./source file/md09086826-350x350.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li a { display:block; padding: 28px; }
+        .col_tit { margin-top: 50%; }
+        .col_tit, .col_com { color:#333; text-shadow:1px 1px 1px #fff; }
+        .col_tit.w , .col_com.w { color:#333; text-shadow:1px 1px 1px #fff; }
+        .col_com { font-size:12px; padding-top: 20px; font-weight: 200;  }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./source file/main/header/lg_logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>제품/소모품</span>
+                            <ul class="sub">
+                                <li><a href="sub1.html#page1">TV/AV</a></li>
+                                <li><a href="sub1.html#page2">IT</a></li>
+                                <li><a href="sub1.html#page3">주방가전</a></li>
+                                <li><a href="sub1.html#page4">생활가전</a></li>
+                                <li><a href="sub1.html#page5">에어컨/에어케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sub2.html#page1">제품 사용지원</a></li>
+                                <li><a href="sub2.html#page2">서비스 상담</a></li>
+                                <li><a href="sub2.html#page3">서비스 예약</a></li>
+                                <li><a href="sub2.html#page4">센터/매장 찾기</a></li>
+                                <li><a href="sub2.html#page5">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>렌탈/케어</span>
+                            <ul class="sub">
+                                <li><a href="sub3.html#page1">제품</a></li>
+                                <li><a href="sub3.html#page2">서비스 소개</a></li>
+                                <li><a href="sub3.html#page3">계정관리</a></li>
+                                <li><a href="sub3.html#page4">고객혜택</a></li>
+                                <li><a href="sub3.html#page5">고객지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>이벤트/멤버십</span>
+                            <ul class="sub">
+                                <li><a href="sub4.html#page1">멤버십</a></li>
+                                <li><a href="sub4.html#page2">이벤트</a></li>
+                                <li><a href="sub4.html#page3">기획전</a></li>
+                                <li><a href="sub4.html#page4">엘라쇼</a></li>
+                                <li><a href="sub4.html#page5">카드혜택</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>스토리</span>
+                            <ul class="sub">
+                                <li><a href="sub5.html#page1">라이프</a></li>
+                                <li><a href="sub5.html#page2">인사이드</a></li>
+                                <li><a href="sub5.html#page3">가이드&팁</a></li>
+                                <li><a href="sub5.html#page4">리뷰</a></li>
+                                <li><a href="sub5.html#page5">아카이브</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">사이트맵</a>
+                    <a href="">오시는길</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./source file/20211109_rentalcare_whisen_hero.webp" alt="제품">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">제품</h2>
+                            <p class="sub_com">속부터 깨끗한 바람 LG WHISEN 타워에어컨</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">렌탈/케어</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub3.html#page1" selected>제품</option>
+                                        <option value="sub3.html#page2">서비스 소개</option>
+                                        <option value="sub3.html#page3">계정관리</option>
+                                        <option value="sub3.html#page4">고객혜택</option>
+                                        <option value="sub3.html#page5">고객지원</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>제품</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">정수기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-LG 퓨리케어 듀얼 정수기 오브제컬렉션 런칭 기념 이벤트</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">공기청정기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-인공지능을 품은 1등 공기청정기</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">전기레인지</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-초고화력이 실력이다 LG DIOS전기레인지</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">의류건조기</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-옷감이 살아나는 스팀 건조의 시작 LG TROMM건조기</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap1">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">정수기</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">공기청정기</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">에어컨</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">의류건조기</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">스타일러</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">전기레인지</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./source file/caresolution-lgstyler-hero-d-1-new.webp" alt="서비스 소개">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">서비스 소개</h2>
+                            <p class="sub_com">라이프스타일에 안전과 편리, 위생을 더하는 차원이 다른 가전 관리 서비스 혜택을 확인하세요</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">렌탈/케어</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub3.html#page1">제품</option>
+                                        <option value="sub3.html#page2" selected>서비스 소개</option>
+                                        <option value="sub3.html#page3">계정관리</option>
+                                        <option value="sub3.html#page4">고객혜택</option>
+                                        <option value="sub3.html#page5">고객지원</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>서비스 소개</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">렌탈(케어솔루션)서비스</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-라이프스타일에 안전과 편리, 위생을 더하는 차원이 다른 가전 관리 서비스 혜택을 확인하세요</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">케어십서비스</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-케어솔루션 계약 종료 후에 신청할 수 있는 차원이 다른 가전 관리 서비스 혜택을 확인하세요</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">렌탈/케어십 요금 확인</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-케어솔루션/케어십 서비스의 결합 혜택을 손쉽게 계산해보세요</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap2">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">렌탈서비스</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">케어솔루션</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">케어십서비스</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">케어십이란?</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">렌탈요금확인</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">케어십요금확인</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="./source file/20211013_PLP_refrigerator_tiiun_banner.webp" alt="계정관리">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">계정관리</h2>
+                            <p class="sub_com">계정에 로그인하여 다양한 서비스를 이용하실 수 있습니다</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">렌탈/케어</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub3.html#page1">제품</option>
+                                        <option value="sub3.html#page2">서비스 소개</option>
+                                        <option value="sub3.html#page3" selected>계정관리</option>
+                                        <option value="sub3.html#page4">고객혜택</option>
+                                        <option value="sub3.html#page5">고객지원</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>계정관리</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">계약현황</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-계약현황을 확인하세요</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">납부내역</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-납부내역을 확인하세요</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">방문일정/예약</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-방문을 예약하고 일정을 확인하세요</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap3">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">계약현황</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">계약조건</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">납부내역</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">납부환급</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">방문일정</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">방문예약</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="./source file/caresolution-massagechairs-hero-d-1.webp" alt="고객혜택">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">고객혜택</h2>
+                            <p class="sub_com">보유제품을 등록하고 다양한 선물 받으세요</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">렌탈/케어</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub3.html#page1">제품</option>
+                                        <option value="sub3.html#page2">서비스 소개</option>
+                                        <option value="sub3.html#page3">계정관리</option>
+                                        <option value="sub3.html#page4" selected>고객혜택</option>
+                                        <option value="sub3.html#page5">고객지원</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>고객혜택</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">이벤트</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-구매하면 백화정 삼품권 100% 증정</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">기획전</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-올레드 구입시 금성오락실 굿즈 패키지 증정</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">혜택안내</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-LG퓨리케어 공기청정기,에어로타워 특별혜택전</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap4">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">상품권</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">굿즈</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">혜택안내</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">세일</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">아울렛</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">페스티벌</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="./source file/20211216_aerotower_hero_pc.webp" alt="고객지원">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">고객지원</h2>
+                            <p class="sub_com">계정에 로그인하여 이용가이드를 확인하고 연차별 혜택을 신청하세요</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">렌탈/케어</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub3.html#page1">제품</option>
+                                        <option value="sub3.html#page2">서비스 소개</option>
+                                        <option value="sub3.html#page3">계정관리</option>
+                                        <option value="sub3.html#page4">고객혜택</option>
+                                        <option value="sub3.html#page5" selected>고객지원</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>고객지원</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">이용가이드/FAQ</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-사이트이용, 회원/멤버십, 이벤트/혜택, 주문/배송/취소, 케어솔루션/케어십</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">렌탈/케어십 소식지</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-렌탈과 케어십의 차이점은?</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">연차별 혜택</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-연차가 오를수록 혜택도 쑥쑥</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap5">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">이용가이드</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">FAQ</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">렌탈소식지</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">케어십소식지</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">연차별혜택신청</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">다른혜택은?</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">사이트맵</a>
+                    <a href="">Contact US</a>
+                    <a href="">회원약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">보안신고센터</a>
+                    <a href="">협력사</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="https://www.facebook.com/" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="https://www.youtube.com/" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="https://post.naver.com/navigator.naver" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © 2022 LG Electronics. All Rights Reserved. 대표번호 : 02-3777-1114</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

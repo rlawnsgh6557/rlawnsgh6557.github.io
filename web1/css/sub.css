@@ -1,0 +1,19 @@
+#content {clear:both; width: 100%;}
+    .bread_box {}
+    .bread_wrap { width: 1280px; margin: 0 auto;}
+    .bread { height: 48px; line-height: 48px;}
+    .bread li { float:left; padding-right: 30px; font-size: 16px;}
+    .bread li:after { content:">"; padding-left: 24px; }
+    .bread li:last-child::after { content: ""; }
+    
+    .content_wrap{background-image: url("../img/bgi1.jpg"); background-size: 50%;}
+
+    .page{clear: both; min-height: 100vh; display: none;}
+    .page:target{display: block;}
+    .page_con {clear:both; width: 100%;}
+    figure {width: 700px; margin: 0 auto; border: 2px solid #333; background-color: #fff;}
+    figure .img_wrap {width: 100%; margin: 0 auto;}
+    img {width: 100%; margin: 0 auto;}
+        .top_img{width: 1000px; margin: 0 auto;}
+    th {width: 100px;}
+    td {font-size: 16px; padding-top: 5px ; padding-bottom: 5px ;}
