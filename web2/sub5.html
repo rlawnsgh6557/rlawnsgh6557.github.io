@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./source file/shortcut icon/favicon.png">
+    <link rel="apple-touch-icon" href="./source file/shortcut icon/favicon.png">
+    <!-- 검색(메타) 정보 -->
+    <meta name="url" content="https://www.lge.co.kr/">
+    <meta name="title" content="LG전자">
+    <meta name="description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta name="keywords" content="LG전자,LG,전자">
+    <!-- 오픈 그래프 -->
+    <meta property="og:url" content="https://www.lge.co.kr">
+    <meta property="og:title" content="LG전자">
+    <meta property="og:description" content="LG전자의 제품/소모품, 고객지원, 렌탈/케어, 이벤트/멤버십, 스토리">
+    <meta property="og:image" content="./source file/shortcut icon/favicon.png">
+    <title>LG전자</title>
+    <!-- 기본 플러그인 연결 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- 웹 폰트/폰트 모듈 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: 'scB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    } 
+    @font-face {
+        font-family: 'ROKAF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }   
+    </style>
+    <!-- 웹 아이콘 연결 -->
+    <!-- XEIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 스타일 초기화 모듈 연결 -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./sub_common.css">
+    <link rel="stylesheet" href="./col.css">
+    <style>
+        .page_con { margin-top: 50px;}
+        .title { font-size: 25px;}
+        .s_tit { font-size: 20px; margin-top: 10px;}
+        .s_con { font-size: 15px;}
+        .page_wrap { margin-bottom: 25px;}
+        .page_wrap2 { width: 100%;  }
+        .grid_box { clear: both; width: 100%; }
+        .grid_wrap1 { clear:both; width: 100%; }
+        .grid_wrap1 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap1 li.item1 { background-image: url("./source file/바리스타_240x180[20210716_173457].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item2 { background-image: url("./source file/선수 응원_리스트 썸네일_1[20220126_150833].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item3 { background-image: url("./source file/03_어_나도!키친_썸네일_리스트[20220329_153045].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap1 li.item4 { background-image: url("./source file/GS_240x180[20211214_104932].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li.item5 { background-image: url("./source file/pandemic-college-lifestyle (240x180)[20220103_153838].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li.item6 { background-image: url("./source file/쁨클리닉 리스트 썸네일(2안)_0120[20220120_095355].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap1 li a { display:block; padding: 28px; }
+        .grid_wrap2 { clear:both; width: 100%; }
+        .grid_wrap2 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap2 li.item1 { background-image: url("./source file/대명장의 추천_김치냉장고 컬렉션_thumb.2_240_180[20220103_110949].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item2 { background-image: url("./source file/240x180[20210730_141129].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item3 { background-image: url("./source file/240x180[20210827_165035].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap2 li.item4 { background-image: url("./source file/Thumb_expert-curation_001_s[20211115_095801].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li.item5 { background-image: url("./source file/master_002_S[20210429_192406].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li.item6 { background-image: url("./source file/틔운_섬네일(리스트형)[20220415_163916].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap2 li a { display:block; padding: 28px; }
+        .grid_wrap3 { clear:both; width: 100%; }
+        .grid_wrap3 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap3 li.item1 { background-image: url("./source file/tiiunrecipe (266x200)[20220427_140817].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item2 { background-image: url("./source file/plusview_student (266x200)[20220415_164059].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item3 { background-image: url("./source file/homeparty (240x180)[20220103_154059].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap3 li.item4 { background-image: url("./source file/plusview_rabotnik (266x200)[20220228_121236].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li.item5 { background-image: url("./source file/plusview_vneshtatnik (266x200)[20220228_121123].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li.item6 { background-image: url("./source file/tiiunhowto (240x180)[20220110_150547].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap3 li a { display:block; padding: 28px; }
+        .grid_wrap4 { clear:both; width: 100%; }
+        .grid_wrap4 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap4 li.item1 { background-image: url("./source file/스탠바이미_섬네일(리스트형)[20220415_163850].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item2 { background-image: url("./source file/17_240x180[20210406_161616].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item3 { background-image: url("./source file/thumb_240x180[20210730_095741].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap4 li.item4 { background-image: url("./source file/3_240x180[20210406_161549].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li.item5 { background-image: url("./source file/monitor_m[20210406_115232].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li.item6 { background-image: url("./source file/06_240x180[20210618_101807].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap4 li a { display:block; padding: 28px; }
+        .grid_wrap5 { clear:both; width: 100%; }
+        .grid_wrap5 li { float:left; height: 16.66667vw; background-position: center center; }
+        .grid_wrap5 li.item1 { background-image: url("./source file/20160812125029967_0.webp"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item2 { background-image: url("./source file/2021reddot[20211012_152222].jpg"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item3 { background-image: url("./source file/한국소비자원[20210917_091253].png"); background-repeat : no-repeat; background-size : cover;} 
+        .grid_wrap5 li.item4 { background-image: url("./source file/NCSI[20210917_103546].png"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li.item5 { background-image: url("./source file/BBKI_2022[20220422_164719].jpg"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li.item6 { background-image: url("./source file/20150908094226102_0.webp"); background-repeat : no-repeat; background-size : cover;}
+        .grid_wrap5 li a { display:block; padding: 28px; }
+        .col_tit { margin-top: 50%; }
+        .col_tit, .col_com { color:#333; text-shadow:1px 1px 1px #fff; }
+        .col_tit.w , .col_com.w { color:#333; text-shadow:1px 1px 1px #fff; }
+        .col_com { font-size:12px; padding-top: 20px; font-weight: 200;  }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./source file/main/header/lg_logo.svg" alt="로고">
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>제품/소모품</span>
+                            <ul class="sub">
+                                <li><a href="sub1.html#page1">TV/AV</a></li>
+                                <li><a href="sub1.html#page2">IT</a></li>
+                                <li><a href="sub1.html#page3">주방가전</a></li>
+                                <li><a href="sub1.html#page4">생활가전</a></li>
+                                <li><a href="sub1.html#page5">에어컨/에어케어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>고객지원</span>
+                            <ul class="sub">
+                                <li><a href="sub2.html#page1">제품 사용지원</a></li>
+                                <li><a href="sub2.html#page2">서비스 상담</a></li>
+                                <li><a href="sub2.html#page3">서비스 예약</a></li>
+                                <li><a href="sub2.html#page4">센터/매장 찾기</a></li>
+                                <li><a href="sub2.html#page5">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>렌탈/케어</span>
+                            <ul class="sub">
+                                <li><a href="sub3.html#page1">제품</a></li>
+                                <li><a href="sub3.html#page2">서비스 소개</a></li>
+                                <li><a href="sub3.html#page3">계정관리</a></li>
+                                <li><a href="sub3.html#page4">고객혜택</a></li>
+                                <li><a href="sub3.html#page5">고객지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>이벤트/멤버십</span>
+                            <ul class="sub">
+                                <li><a href="sub4.html#page1">멤버십</a></li>
+                                <li><a href="sub4.html#page2">이벤트</a></li>
+                                <li><a href="sub4.html#page3">기획전</a></li>
+                                <li><a href="sub4.html#page4">엘라쇼</a></li>
+                                <li><a href="sub4.html#page5">카드혜택</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>스토리</span>
+                            <ul class="sub">
+                                <li><a href="sub5.html#page1">라이프</a></li>
+                                <li><a href="sub5.html#page2">인사이드</a></li>
+                                <li><a href="sub5.html#page3">가이드&팁</a></li>
+                                <li><a href="sub5.html#page4">리뷰</a></li>
+                                <li><a href="sub5.html#page5">아카이브</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb">
+                    <a href="">로그인</a>
+                    <a href="">사이트맵</a>
+                    <a href="">오시는길</a>
+                </p>
+            </div>
+        </header>
+        <div id="content">
+            <div class="content_wrap">
+                <section class="page" id="page1">
+                    <figure class="sub_ban">
+                        <img src="./source file/customer support/CS/img-support-home-hero-pc.jpg" alt="라이프">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">라이프</h2>
+                            <p class="sub_com">라이프 스타일, 우리 생활 속 LG 가전을 만나보세요</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">스토리</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub5.html#page1" selected>라이프</option>
+                                        <option value="sub5.html#page2">인사이드</option>
+                                        <option value="sub5.html#page3">가이드&팁</option>
+                                        <option value="sub5.html#page4">리뷰</option>
+                                        <option value="sub5.html#page5">아카이브</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>라이프</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">라이프스타일</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-우리 생활 속 LG 가전을 만나보세요</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">트렌드</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-끊임없이 발전하는 LG전자의 새로움을 만나보세요</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap1">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">방구석필수템</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">부캐소환</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">나도!키친</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">금성오락실</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">그램360답게</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">프라엘워시팝</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <figure class="sub_ban">
+                        <img src="./source file/caresolution-electricranges-hero-d-1.webp" alt="인사이드">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">인사이드</h2>
+                            <p class="sub_com">대명장의 추천, 베스트샵 최고의 판매 명장이 추천합니다</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">스토리</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub5.html#page1">라이프</option>
+                                        <option value="sub5.html#page2" selected>인사이드</option>
+                                        <option value="sub5.html#page3">가이드&팁</option>
+                                        <option value="sub5.html#page4">리뷰</option>
+                                        <option value="sub5.html#page5">아카이브</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>인사이드</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">대명장의 추천</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-베스트샵 최고의 판매 명장이 추천합니다</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">Only & Best</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-LG전자의 압도적인 기술력을 만나보세요</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap2">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">건강</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">워라벨</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">인테리어</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">스마트홈</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">인공지능</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">오브제컬렉션</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <figure class="sub_ban">
+                        <img src="./source file/May_LGPral_exhibitions_PC_0429.jpg" alt="가이드&팁">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">가이드&팁</h2>
+                            <p class="sub_com">가전꿀팁, 쓸수록 매력적인 LG 가전 활용법을 알려드려요</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">스토리</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub5.html#page1">라이프</option>
+                                        <option value="sub5.html#page2">인사이드</option>
+                                        <option value="sub5.html#page3" selected>가이드&팁</option>
+                                        <option value="sub5.html#page4">리뷰</option>
+                                        <option value="sub5.html#page5">아카이브</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>가이드&팁</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">가전꿀팁</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-쓸수록 매력적인 LG 가전 활용법을 알려드려요</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">사용가이드</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-LG가전 구매 후 사용법을 안내해드립니다</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap3">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">나만의레시피</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">플러스뷰</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">홈파티</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">직장인</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">프리랜서</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">식물성장스토리</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page4">
+                    <figure class="sub_ban">
+                        <img src="./source file/img-stanbyme-visual.jpg" alt="리뷰">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">리뷰</h2>
+                            <p class="sub_com">스탠바이미에 대한 다양한 의견과 아이디어를 나누는 소통의 공간</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">스토리</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub5.html#page1">라이프</option>
+                                        <option value="sub5.html#page2">인사이드</option>
+                                        <option value="sub5.html#page3">가이드&팁</option>
+                                        <option value="sub5.html#page4" selected>리뷰</option>
+                                        <option value="sub5.html#page5">아카이브</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>리뷰</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">고객리뷰</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-고객님께서 작성한 리뷰를 알아보자</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">스탠바이미</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-나만을 위한 프라이빗 스크린</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap4">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">이동형스크린</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">여름나기</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">디오스</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">스마트상자</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">방향전환</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">초음파클렌저</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" id="page5">
+                    <figure class="sub_ban">
+                        <img src="./source file/211124_caresolution_aircare_hero_pc.webp" alt="아카이브">
+                        <div class="tit_box">
+                            <h2 class="sub_tit">아카이브</h2>
+                            <p class="sub_com">LG전자의 다양한 정보를 확인하세요</p>
+                        </div>
+                    </figure>
+                    <div class="bread_box">
+                        <div class="bread_wrap">
+                            <ul class="bread">
+                                <li class="item1">
+                                    <a href="index" class="home">HOME</a>
+                                </li>
+                                <li class="item2">스토리</li>
+                                <li class="item3">
+                                    <select name="sel" id="sel1" class="sel">
+                                        <option value="sub5.html#page1">라이프</option>
+                                        <option value="sub5.html#page2">인사이드</option>
+                                        <option value="sub5.html#page3">가이드&팁</option>
+                                        <option value="sub5.html#page4">리뷰</option>
+                                        <option value="sub5.html#page5" selected>아카이브</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page_con">
+                        <div class="page_wrap">
+                            <div class="title">
+                                <h2>아카이브</h2>
+                            </div>
+                            <div class="feature_inner">
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">TV광고</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">-LG WHISEN 오브제컬렉션-이렇게 깨끗하고 시원한 바람</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="s_tit">수상내역</p>
+                                    </li>
+                                    <li>
+                                        <p class="s_con">2021년 레드닷 디자인 어워드 수상!</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="page_wrap2">
+                            <div class="grid_box">
+                                <ul class="grid_wrap5">
+                                    <li class="col2 item1">
+                                        <a href="">
+                                            <h3 class="col_tit">에어컨부문</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item2">
+                                        <a href="">
+                                            <h3 class="col_tit">레드닷</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item3">
+                                        <a href="">
+                                            <h3 class="col_tit">고객충성도</h3>
+                                            <p class="col_com"></p>
+                                            <span class="arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item4">
+                                        <a href="">
+                                            <h3 class="col_tit w">고객만족도</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item5">
+                                        <a href="">
+                                            <h3 class="col_tit w">베스트브랜드</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                    <li class="col2 item6">
+                                        <a href="">
+                                            <h3 class="col_tit w">디자인부문</h3>
+                                            <p class="col_com w"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script>
+            $(document).ready(function(){
+                $(".sel").change(function(){
+                    location.href = this.value;
+                });
+            });    
+            </script>
+        </div>
+        <footer id="ft">
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">사이트맵</a>
+                    <a href="">Contact US</a>
+                    <a href="">회원약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">보안신고센터</a>
+                    <a href="">협력사</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="https://www.facebook.com/" title="페이스북"><i class="xi-facebook"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="https://www.youtube.com/" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="https://post.naver.com/navigator.naver" title="네이버 포스트"><i class="xi-naver"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright © 2022 LG Electronics. All Rights Reserved. 대표번호 : 02-3777-1114</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
